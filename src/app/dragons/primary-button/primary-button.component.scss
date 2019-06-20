@@ -1,0 +1,68 @@
+.primary-button {
+  background-color: #5773FF;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0 4px 12px 0 rgba(87, 115, 255, 0.58);
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  letter-spacing: 3px;
+  outline: none;
+  padding: 12px 18px;
+  text-transform: uppercase;
+
+  @media ( max-width: 1845px ) {
+    &.edit {
+      padding: 12px;
+    }
+  }
+
+  @media (max-width: 823px) {
+    &.add {
+      padding: 12px;
+    }
+  }
+
+  .button-title {
+    margin: 0;
+    padding: 0;
+
+    @media ( max-width: 1845px ) {
+      &.edit {
+        display: none;
+      }
+    }
+
+    @media (max-width: 823px) {
+      &.add {
+        display: none;
+      }
+    }
+  }
+
+  .icon-add {
+    background-image: url('../../../assets/images/icon-plus.png');
+    background-position: center;
+    background-size: cover;
+    height: 16px;
+    margin-right: 10px;
+    width: 16px; 
+
+    @media (max-width: 823px) {
+      margin-right: 0px;
+    }
+  }
+
+  .icon-edit {
+    background-image: url('../../../assets/images/icon-edit.png');
+    background-position: center;
+    background-size: cover;
+    display: none;
+    height: 16px;
+    width: 16px; 
+
+    @media ( max-width: 1845px ) {
+      display: block;
+    }
+  }
+}

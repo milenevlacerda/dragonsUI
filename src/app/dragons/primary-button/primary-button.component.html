@@ -1,0 +1,5 @@
+<button class="primary-button" [ngClass]="{'edit': edit, 'add': add}">
+  <span class="icon-add" *ngIf="add"></span>
+  <span class="icon-edit" *ngIf="edit"></span>
+  <p class="button-title" [ngClass]="{'edit': edit, 'add': add}">{{ title }}</p>
+</button>
