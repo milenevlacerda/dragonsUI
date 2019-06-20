@@ -1,17 +1,5 @@
 <ul class="list">
-  <li class="item"> 
-    <app-card title="Theodoro"></app-card>
-  </li>
-  <li class="item"> 
-    <app-card title="Theodoro"></app-card>
-  </li>
-  <li class="item"> 
-    <app-card title="Theodoro"></app-card>
-  </li>
-  <li class="item"> 
-    <app-card title="Theodoro"></app-card>
-  </li>
-  <li class="item"> 
-    <app-card title="Theodoro"></app-card>
+  <li class="item" *ngFor="let dragon of dragons">
+    <app-card [dragon]="dragon"></app-card>
   </li>
 </ul>

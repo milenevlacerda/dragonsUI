@@ -1,16 +1,16 @@
 <div class="item-card">
   <h4 class="card-title">
-    {{ title }}
+    {{ dragon.name }}
   </h4>
   <div class="card-wrapper-content">
     <div class="content-description">
       <div class="description">
         <span class="title">Tipo:</span>
-        <p class="detail">Dragonite</p>
+        <p class="detail">{{ dragon.type }}</p>
       </div>
       <div class="description">
         <span class="title">Data de cadastro:</span>
-        <p class="detail">15/07/2019</p>
+        <p class="detail">{{ dragon.created_at | date:'dd/MM/yyyy' }}</p>
       </div>
     </div>
     <div class="content-actions">
