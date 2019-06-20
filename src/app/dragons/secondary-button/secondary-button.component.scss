@@ -1,0 +1,17 @@
+.secondary-button {
+  background-color: #6c6c6c;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 12px;
+
+  > .icon {
+    background-image: url('../../../assets/images/icon-delete.png');
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 14px;
+    margin: 0 auto;
+    width: 13px; 
+  }
+}
