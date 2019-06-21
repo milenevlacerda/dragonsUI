@@ -6,11 +6,11 @@
     <form class="form" #form="ngForm" (ngSubmit)="save(form)" >
       <div class="form-row row-required">
         <label for="" class="label">Nome</label>
-        <input type="text" name="name" class="input" aria-required="true" required ngModel>
+        <input type="text" name="name" class="input" aria-required="true" required [(ngModel)]="dragon.name">
       </div>
       <div class="form-row row-required">
         <label for="" class="label">Tipo</label>
-        <input type="text" name="type" aria-required="true" class="input" required ngModel>
+        <input type="text" name="type" aria-required="true" class="input" required [(ngModel)]="dragon.type">
       </div>
 
       <button class="button" type="submit">

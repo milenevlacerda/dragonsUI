@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 
 import { DragonsComponent } from './dragons.component';
 import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   {
@@ -13,7 +14,12 @@ const routes: Routes = [
     path: 'cadastrar',
     component: CreateComponent,
     outlet: 'modal',
-  }
+  },
+  {
+    path: 'editar/:slug',
+    component: EditComponent,
+    outlet: 'modal',
+  },
 ];
 
 @NgModule({

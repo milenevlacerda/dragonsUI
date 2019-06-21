@@ -1,3 +1,8 @@
 <div class="create-edit">
-  <app-modal title="Editar Dragão"></app-modal>
+  <app-modal
+    title="Editar Dragão"
+    [dragon]="dragon"
+    (onSave)="edit($event)"
+    (onClose)="close()"
+  ></app-modal>
 </div>

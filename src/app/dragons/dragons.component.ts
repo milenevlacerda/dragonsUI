@@ -34,7 +34,6 @@ export class DragonsComponent implements OnInit {
 
   public createDragon() {
     this.router.navigate([{ outlets: { modal: 'cadastrar' } }])
-    console.log('createDragon');
   }
 
 }
