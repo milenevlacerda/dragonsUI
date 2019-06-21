@@ -22,12 +22,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Install
 
 **step 1 - Clone Repo**
-```git clone https://github.com/milenevlacerda/dragonsui.git```
+
+```git clone https://github.com/milenevlacerda/dragonsUI.git```
 
 **step 2 - Install dependencies**
+
 ```npm install```
 
 **step 3 - Install dependencies**
+
 ```npm start```
 
 **step 4 - Credentials**
