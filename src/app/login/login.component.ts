@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate([''])
       })
       .catch(() => {
-        this.error = 'Erro ao efetu...';
+        this.error = 'Dados incorretos! Tente novamente.';
       })
   }
 
