@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DragonsService } from '../../core/services/dragons/dragons.service';
-import Dragon from '../../core/models/dragon.model';
 import PubSub from 'pubsub-js';
 
 @Component({
@@ -10,7 +9,7 @@ import PubSub from 'pubsub-js';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-  public dragon: Dragon = {};
+  public dragon = {};
 
   constructor(
     private router: Router,
@@ -19,6 +18,7 @@ export class EditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // @ts-ignore
     this.fetchDragon(this.activatedRoute.params.value.slug);
   }
 
@@ -34,6 +34,7 @@ export class EditComponent implements OnInit {
   }
 
   public edit(dragon) {
+    // @ts-ignore
     this.dragonsService.updateDragon(this.dragon.slug, dragon)
       .then(() => {
         PubSub.publish('FETCH_DRAGONS');

@@ -10,7 +10,7 @@ import PubSub from 'pubsub-js';
   styleUrls: ['./modal-delete.component.scss']
 })
 export class ModalDeleteComponent implements OnInit {
-  public dragon: Dragon = {};
+  public dragon = {};
 
   constructor(
     private router: Router,
@@ -19,6 +19,7 @@ export class ModalDeleteComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // @ts-ignore
     this.fetchDragon(this.activatedRoute.params.value.slug);
   }
 
@@ -29,8 +30,9 @@ export class ModalDeleteComponent implements OnInit {
       })
   }
 
-  public delete(dragon) {
-    this.dragonsService.deleteDragon(this.dragon.slug, dragon)
+  public delete() {
+    // @ts-ignore
+    this.dragonsService.deleteDragon(this.dragon.slug)
       .then(() => {
         PubSub.publish('FETCH_DRAGONS');
         this.router.navigate(['']);
