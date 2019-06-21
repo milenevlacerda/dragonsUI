@@ -12,6 +12,7 @@ import { ModalComponent } from './modal/modal.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
 import { FormsModule } from '@angular/forms';
+import { ModalDeleteComponent } from './modal-delete/modal-delete.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { FormsModule } from '@angular/forms';
     DragonsRoutingModule,
     FormsModule,
   ],
-  declarations: [DragonsComponent, ListComponent, CardComponent, HeaderComponent, TitleComponent, PrimaryButtonComponent, SecondaryButtonComponent, ModalComponent, CreateComponent, EditComponent]
+  declarations: [DragonsComponent, ListComponent, CardComponent, HeaderComponent, TitleComponent, PrimaryButtonComponent, SecondaryButtonComponent, ModalComponent, CreateComponent, EditComponent, ModalDeleteComponent]
 })
 export class DragonsModule { }

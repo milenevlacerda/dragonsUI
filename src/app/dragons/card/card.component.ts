@@ -19,4 +19,8 @@ export class CardComponent implements OnInit {
   public edit() {
     this.router.navigate([{ outlets: { modal: ['editar', this.dragon.slug] } }]);    
   }
+
+  public delete() {
+    this.router.navigate([{ outlets: { modal: ['excluir', this.dragon.slug] } }]);    
+  }
 }

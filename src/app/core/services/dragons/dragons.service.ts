@@ -22,7 +22,7 @@ export class DragonsService {
   }
 
   public createNewDragon(data: Dragon) {
-    return axios.post(BASEURL, dragon)
+    return axios.post(BASEURL, data)
       .then( res => res.data);
   }
 
@@ -30,8 +30,8 @@ export class DragonsService {
     return axios.delete(`${BASEURL}/${slug}`);
   }
 
-  public updateDragon(dragon: Dragon) {
-    return axios.put(`${BASEURL}/${dragon.slug}`, dragon);
+  public updateDragon(slug, dragon: Dragon) {
+    return axios.put(`${BASEURL}/${slug}`, dragon);
   }
 
   constructor() { }
