@@ -13,4 +13,11 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
 
+  public get sortedDragons() {
+    return this.dragons.sort((a, b) => {
+      if (a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()) return -1;
+      return 1;
+    });
+  }
+
 }
