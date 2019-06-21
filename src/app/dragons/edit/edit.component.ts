@@ -40,5 +40,4 @@ export class EditComponent implements OnInit {
         this.router.navigate(['']);
       })
   }
-
 }
