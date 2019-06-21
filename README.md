@@ -4,24 +4,40 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `npm start` for start the application and navigate to `http://localhost:4200/`.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Requisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- git
+- npm
+- responsive design
+- authentication and login
+- Angular CLI
 
-## Running end-to-end tests
+## Install
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+**step 1 - Clone Repo**
+```git clone https://github.com/milenevlacerda/dragonsui.git```
 
-## Further help
+**step 2 - Install dependencies**
+```npm install```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**step 3 - Install dependencies**
+```npm start```
+
+**step 4 - Credentials**
+> email: dragons@ui.com
+> 
+> password: dragons
+
+## UI Design
+
+The UI screens were prototyped by me, and the images are on the folder:
+> dragonsUI/src/assets/images/UI Design
+
+I used Adobe XD to prototype this, and I looked for a clean and simple design. I hope you enjoy it.
