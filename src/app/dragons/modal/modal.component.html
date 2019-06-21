@@ -1,19 +1,19 @@
 <div class="modal-background">
   <div class="modal-container">
-    <button class="button-close"></button>
-    <h3 class="title">Cadastrar Dragão</h3>
+    <button class="button-close" (click)="close()"></button>
+    <h3 class="title">{{ title }}</h3>
 
-    <form class="form" action="">
+    <form class="form" #form="ngForm" (ngSubmit)="save(form)" >
       <div class="form-row row-required">
         <label for="" class="label">Nome</label>
-        <input type="text" name="nome" class="input" aria-required="true" required>
+        <input type="text" name="name" class="input" aria-required="true" required ngModel>
       </div>
       <div class="form-row row-required">
         <label for="" class="label">Tipo</label>
-        <input type="text" name="tipo" aria-required="true" class="input" required>
+        <input type="text" name="type" aria-required="true" class="input" required ngModel>
       </div>
 
-      <button class="button">
+      <button class="button" type="submit">
         <p class="button-title">Salvar</p>
       </button>
     </form>

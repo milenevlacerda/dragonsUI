@@ -9,12 +9,16 @@ import { TitleComponent } from './title/title.component';
 import { PrimaryButtonComponent } from './primary-button/primary-button.component';
 import { SecondaryButtonComponent } from './secondary-button/secondary-button.component';
 import { ModalComponent } from './modal/modal.component';
+import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     DragonsRoutingModule,
+    FormsModule,
   ],
-  declarations: [DragonsComponent, ListComponent, CardComponent, HeaderComponent, TitleComponent, PrimaryButtonComponent, SecondaryButtonComponent, ModalComponent]
+  declarations: [DragonsComponent, ListComponent, CardComponent, HeaderComponent, TitleComponent, PrimaryButtonComponent, SecondaryButtonComponent, ModalComponent, CreateComponent, EditComponent]
 })
 export class DragonsModule { }

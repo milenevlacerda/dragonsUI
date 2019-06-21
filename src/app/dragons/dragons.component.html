@@ -1,7 +1,7 @@
 <!-- <app-modal></app-modal> -->
 <section class="content">
   <div class="container-wrapper">
-    <app-header></app-header>
+    <app-header (onCreate)="createDragon()"></app-header>
     <app-title title="Gerencie sua lista de Dragões de modo fácil."></app-title>
     <app-list [dragons]="dragons"></app-list>
   </div>
